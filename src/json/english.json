@@ -1,0 +1,46 @@
+{
+    "lang" : "en",
+
+    "navbar":
+    {
+        "home" : "Home",
+        "about" : "About",
+        "contact" : "Contact",
+        "language" : "Language",
+        "english" : "English",
+        "japanese" : "Japanese"
+    },
+
+    "homepage":
+    {
+        "message" : "Website under Construction, come back later.",
+        "subMessage" : "Might take several days.",
+        "time" : "Time now is",
+        "goodMorning" : "Good Morning",
+        "goodAfternoon" : "Good Afternoon",
+        "goodEvening" : "Good Evening",
+        "goodNight" : "Good Night",
+        "midnight" : "It's almost midnight",
+        "prettyQuick" : "You got up pretty quick"
+    },
+
+    "contact" :
+    {
+        "heading" : "Contact page",
+        "fillText" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+
+    "about" :
+    {
+        "heading" : "About page",
+        "fillText" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+
+    "dialogbox" :
+    {
+        "areYouSure" : "Do you want to change the language?",
+        "description" : "To change the language again, click the languages list tab.",
+        "agree" : "Agree",
+        "disagree" : "Disagree"
+    }
+}

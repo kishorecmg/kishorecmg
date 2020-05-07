@@ -1,0 +1,125 @@
+Microsoft Windows [Version 10.0.18363.815]
+(c) 2019 Microsoft Corporation. All rights reserved.
+
+C:\Users\Kishore Prabhu S>npx create-react-app lai
+Error: EEXIST: file already exists, mkdir 'C:\Users\Kishore'
+command not found: create-react-app
+
+C:\Users\Kishore Prabhu S>cd lai
+The system cannot find the path specified.
+
+C:\Users\Kishore Prabhu S>E:
+
+E:\>npx create-react-app lai
+Error: EEXIST: file already exists, mkdir 'C:\Users\Kishore'
+command not found: create-react-app
+
+E:\>npx create-react-app my-app
+Error: EEXIST: file already exists, mkdir 'C:\Users\Kishore'
+command not found: create-react-app
+
+E:\> npm install -g create-react-app
+C:\Users\Kishore Prabhu S\AppData\Roaming\npm\create-react-app -> C:\Users\Kishore Prabhu S\AppData\Roaming\npm\node_modules\create-react-app\index.js
++ create-react-app@3.4.1
+added 98 packages from 46 contributors in 32.951s
+
+E:\>create-react-app my-app
+
+Creating a new React app in E:\my-app.
+
+Installing packages. This might take a couple of minutes.
+Installing react, react-dom, and react-scripts with cra-template...
+
+
+> core-js@2.6.11 postinstall E:\my-app\node_modules\babel-runtime\node_modules\core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> core-js@3.6.5 postinstall E:\my-app\node_modules\core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> core-js-pure@3.6.5 postinstall E:\my-app\node_modules\core-js-pure
+> node -e "try{require('./postinstall')}catch(e){}"
+
++ cra-template@1.0.3
++ react@16.13.1
++ react-scripts@3.4.1
++ react-dom@16.13.1
+added 1606 packages from 750 contributors and audited 931424 packages in 526.735s
+
+58 packages are looking for funding
+  run `npm fund` for details
+
+found 1 low severity vulnerability
+  run `npm audit fix` to fix them, or `npm audit` for details
+
+Initialized a git repository.
+
+Installing template dependencies using npm...
+npm WARN tsutils@3.17.1 requires a peer of typescript@>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta but none is installed. You must install peer dependencies yourself.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.1.2 (node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.1.2: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.12 (node_modules\webpack-dev-server\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.12: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.12 (node_modules\watchpack\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.12: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.12 (node_modules\jest-haste-map\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.12: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
++ @testing-library/jest-dom@4.2.4
++ @testing-library/react@9.5.0
++ @testing-library/user-event@7.2.1
+added 36 packages from 56 contributors and audited 931630 packages in 38.204s
+
+58 packages are looking for funding
+  run `npm fund` for details
+
+found 1 low severity vulnerability
+  run `npm audit fix` to fix them, or `npm audit` for details
+Removing template package using npm...
+
+npm WARN tsutils@3.17.1 requires a peer of typescript@>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta but none is installed. You must install peer dependencies yourself.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.1.2 (node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.1.2: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.12 (node_modules\webpack-dev-server\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.12: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.12 (node_modules\watchpack\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.12: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.12 (node_modules\jest-haste-map\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.12: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
+removed 1 package and audited 931629 packages in 17.586s
+
+58 packages are looking for funding
+  run `npm fund` for details
+
+found 1 low severity vulnerability
+  run `npm audit fix` to fix them, or `npm audit` for details
+
+Created git commit.
+
+Success! Created my-app at E:\my-app
+Inside that directory, you can run several commands:
+
+  npm start
+    Starts the development server.
+
+  npm run build
+    Bundles the app into static files for production.
+
+  npm test
+    Starts the test runner.
+
+  npm run eject
+    Removes this tool and copies build dependencies, configuration files
+    and scripts into the app directory. If you do this, you can’t go back!
+
+We suggest that you begin by typing:
+
+  cd my-app
+  npm start
+
+Happy hacking!
+
+E:\>
