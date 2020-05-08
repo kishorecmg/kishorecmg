@@ -1,13 +1,175 @@
-body {
+:root
+{
+  --main-navbar : #0091ea;
+  --main-navbar-text : #fff;
+  --main-background-color : #fff;
+  --main-text-color : black;
+}
+
+body 
+{
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  font-weight: 400;
+  
+  background-color: var(--main-background-color);
+  color : var(--main-text-color)
 }
 
-code {
+code 
+{
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Nav bar yaa */
+
+.navbar 
+{
+  background-color: var(--main-navbar) !important;
+  min-height: 80px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.navbar-brand 
+{
+  font-weight: bold;
+  padding: 0 15px;
+  height: 80px;
+  font-size: 25px;
+  line-height: 80px;
+}
+
+.navbar-toggle 
+{
+  /* (80px - button height 34px) / 2 = 23px */
+  margin-top: 23px;
+  padding: 9px 10px !important;
+}
+
+@media (min-width: 768px)
+{
+  .navbar-nav > li > a {
+    /* (80px - line-height of 27px) / 2 = 26.5px */
+    padding-top: 26.5px;
+    padding-bottom: 26.5px;
+    line-height: 27px;
+  }
+}
+
+ .menu-item 
+ {
+	color: var(--main-navbar-text) !important;
+	display: block;
+	font-size: 16px;
+  padding: 10px 20px !important;
+  margin: 5px 5px;
+} 
+
+a.menu-item:hover, .active
+{
+  color: var(--main-navbar) !important;     /* to override the default text colour */
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -o-border-radius: 30px;
+  border-radius: 30px;
+}
+
+a.menu-item:hover
+{
+  background-color: var(--main-navbar-text);
+}
+
+.active
+{
+  background-color: var(--main-navbar-text);
+}
+
+/* Nav bar ends */
+
+/*  Nightmode switch starts */
+
+/* .nightmode
+{
+
+} */
+
+.switch {
+  position: absolute;
+  display: inline-block;
+  width: 30px;
+  height: 17px;
+  margin: 4px 0px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 13px;
+  width: 13px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(13px);
+  -ms-transform: translateX(13px);
+  transform: translateX(13px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 17px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.nightmode-label
+{
+  color: var(--main-navbar-text);
+  display: inline-block;
+  position: relative;
+  padding : 0 20px 0 0px;
+  margin : auto;
+}
+
+/* Nightmode switch ends */

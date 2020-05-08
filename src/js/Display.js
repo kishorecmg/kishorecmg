@@ -1,12 +1,14 @@
 import React from 'react'
-import { BrowserRouter, Route } from 'react-router-dom'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 import Navbar from './Navbar'
 import Home from './Home' 
 import About from './About'
 import Contact from './Contact'
-import Dialogbox from './Dialogbox'
-import LoadingScreen from './LoadingScreen'
+
+import ErrorPage from './utils/ErrorPage'
+import Dialogbox from './utils/Dialogbox'
+import LoadingScreen from './utils/LoadingScreen'
 
 import english from '../json/english.json'
 import japanese from '../json/japanese.json'
@@ -93,6 +95,9 @@ class Display extends React.Component
 				agreedOrNot: this.agreedOrNot.bind(this)}} />
 		}
 		
+		/* Switch component have to be always surround only Route components, else ErrorPage component is 
+			displayed in all pages */
+
 		return(
 			<BrowserRouter>
 				<div>
@@ -103,10 +108,15 @@ class Display extends React.Component
 
 					{dialogbox}
 
-					<Route exact path="/" render={(props) => <Home {...props} currentLanguage={this.state.language} />} />
-					<Route exact path="/about" render={(props) => <About {...props} currentLanguage={this.state.language} />} />
-					<Route exact path="/contact" render={(props) => <Contact {...props} currentLanguage={this.state.language} />} />
-					
+				 	<Switch>
+						<Route exact path="/" render={(props) => <Home {...props} currentLanguage={this.state.language} />} />
+						<Route path="/about" render={(props) => <About {...props} currentLanguage={this.state.language} />} />
+						<Route path="/contact" render={(props) => <Contact {...props} currentLanguage={this.state.language} />} />
+						
+						{/* This one is ErrorPage, displayed when different URL is typed manually */}
+						<Route path="" component={ErrorPage} />
+					</Switch>
+
 
 				</div>
 			</BrowserRouter>

@@ -1,6 +1,8 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
+import NightModeSwitch from './utils/NightModeSwitch'
+
 class Navbar extends React.Component
 {
     /* replace emojis with images as soon as possible
@@ -11,8 +13,8 @@ class Navbar extends React.Component
     {
         let currentLang = this.props.data.language.navbar
         return(
-            <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-                <NavLink className="navbar-brand" to="/" exact={true} > <span role="img" aria-label="home"> 🏠 </span> {currentLang.home}</NavLink>
+            <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+                <div className="navbar-brand" > KishoreCMG </div>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" 
                     data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" 
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -21,11 +23,15 @@ class Navbar extends React.Component
 
               <div className="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul className="navbar-nav">
-                <NavLink className="nav-item nav-link" to="/about"> <span role="img" aria-label="info"> ℹ </span> {currentLang.about}</NavLink>
-                        <NavLink className="nav-item nav-link" to="/contact"> <span role="img" aria-label="contact"> 📞 </span> {currentLang.contact}</NavLink>
+                <NavLink className="nav-item nav-link menu-item" to="/" exact={true} > <span role="img" aria-label="home"> 🏠 </span> {currentLang.home}</NavLink>
+                <NavLink className="nav-item nav-link menu-item" to="/about"> <span role="img" aria-label="info"> ℹ </span> {currentLang.about}</NavLink>
+                <NavLink className="nav-item nav-link menu-item" to="/contact"> <span role="img" aria-label="contact"> 📞 </span> {currentLang.contact}</NavLink>
                 </ul>
 
-                <ul className="navbar-nav ml-auto" style={{marginRight: "5%"}}>
+                <NightModeSwitch />
+
+                <ul className="navbar-nav ml-auto" style={{marginRight: "3%"}}>
+                {/* <ul className="navbar-nav ml-auto "> */}
                 <li className="nav-item dropdown">
                     <a className="nav-link dropdown-toggle" href="/" id="navbarDropdownMenuLink" 
                     data-toggle="dropdown" aria-haspopup="true" 

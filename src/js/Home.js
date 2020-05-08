@@ -12,7 +12,7 @@ class Home extends React.Component
         return(
             <div className="container">
                 <header>
-                    <h1 className="jumbotron text-center">{currentLang.message}</h1>
+                    <h1 className="jumbotron text-center" style={{color: "black"}}>{currentLang.message}</h1>
                 </header>
 
                 <h1>{this.props.title}</h1>
