@@ -28,9 +28,10 @@ class Navbar extends React.Component
                 <NavLink className="nav-item nav-link menu-item" to="/contact"> <span role="img" aria-label="contact"> 📞 </span> {currentLang.contact}</NavLink>
                 </ul>
 
-                <NightModeSwitch />
-
                 <ul className="navbar-nav ml-auto" style={{marginRight: "3%"}}>
+                
+                <li> <NightModeSwitch /> </li>
+                        
                 {/* <ul className="navbar-nav ml-auto "> */}
                 <li className="nav-item dropdown">
                     <a className="nav-link dropdown-toggle" href="/" id="navbarDropdownMenuLink" 

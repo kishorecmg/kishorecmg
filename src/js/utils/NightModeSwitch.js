@@ -24,7 +24,7 @@ class NightModeSwitch extends React.Component
     render()
     {
         return(
-            <div className="navbar-nav ml-auto nightmode" style={{marginRight: "-300px"}}>
+            <div id="nightmode-switch" className="navbar-nav ml-auto nightmode">
                 <div className="nav-item menu-item">
                     <p className="nightmode-label">Night Mode</p>
                 <label className="switch">
