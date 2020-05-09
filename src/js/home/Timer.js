@@ -47,9 +47,8 @@ class Timer extends React.Component
 		let currentLang = this.props.displayLanguage
 
 		return(
-				<div style={{margin: "20px auto"}} className="alert alert-info" >
-					<h3 className="text-center">{currentLang.subMessage}</h3>
-					<p className="text-center">{this.greet()}! {currentLang.time} {time[0]}</p>
+				<div>
+					<p>{this.greet()}! {currentLang.time} {time[0]}</p>
 				</div>
 			)
 	}

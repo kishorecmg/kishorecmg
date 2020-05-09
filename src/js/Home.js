@@ -1,7 +1,9 @@
 import React from 'react'
 
-import Timer from '../js/home/Timer'
-import image from '../img/Construction.png'
+import Banner from './home/Banner'
+import TechUsed from './home/TechUsed'
+
+// import image from '../img/Construction.png'
 
 class Home extends React.Component
 {   
@@ -10,16 +12,17 @@ class Home extends React.Component
         let currentLang = this.props.currentLanguage.homepage;
         
         return(
-            <div className="container">
-                <header>
-                    <h1 className="jumbotron text-center" style={{color: "black"}}>{currentLang.message}</h1>
-                </header>
+            <div>
+                <Banner displayLanguage={currentLang}/>
 
-                <h1>{this.props.title}</h1>
+                <section className="why-a-website">
+                    <div className="container text-center">
+                        <div className="block-heading heading-why-a-website"> <h2>{currentLang.whyWebsite}</h2> </div>
+                        <p className="lead details-why-a-website">{currentLang.whyWebsiteReason}</p>
+                    </div>
+                </section>
 
-                <Timer displayLanguage={currentLang} />
-
-                <img src={image} alt="construction" style={{margin: "20px auto", width: "90%"}} className="img-circle" />
+                <TechUsed />
             </div>
     );
   }

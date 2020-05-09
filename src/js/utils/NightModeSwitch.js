@@ -5,17 +5,20 @@ class NightModeSwitch extends React.Component
     changeTheme(event)
     {
         var qing = event.target.checked;
-        console.log(qing)
-        if(qing)
+        // console.log(qing)
+        
+        if(qing) // Night-mode on
         {
             document.documentElement.style.setProperty("--main-navbar", "#333");
             document.documentElement.style.setProperty("--main-background-color", "#555");
+            document.documentElement.style.setProperty("--main-background-light-grey", "#5f5f5f");
             document.documentElement.style.setProperty("--main-text-color", "white");
         }
-        else
+        else // Night-mode off
         {
             document.documentElement.style.setProperty("--main-navbar", "#0091ea");
             document.documentElement.style.setProperty("--main-background-color", "#fff");
+            document.documentElement.style.setProperty("--main-background-light-grey", "#fafafa");
             document.documentElement.style.setProperty("--main-text-color", "black");        
         }
 

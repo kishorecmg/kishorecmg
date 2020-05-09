@@ -13,7 +13,7 @@ class Navbar extends React.Component
     {
         let currentLang = this.props.data.language.navbar
         return(
-            <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+            <nav className="navbar navbar-expand-lg navbar-dark bg-primary" >
                 <div className="navbar-brand" > KishoreCMG </div>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" 
                     data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" 

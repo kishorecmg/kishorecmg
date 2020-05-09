@@ -7,6 +7,7 @@ import "bootstrap/dist/js/bootstrap.min.js";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './css/index.css'
+import './css/responsive-index.css'
 
 import App from './js/App';
 

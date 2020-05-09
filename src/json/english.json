@@ -13,8 +13,9 @@
 
     "homepage":
     {
-        "message" : "Website under Construction, come back later.",
-        "subMessage" : "Might take several days.",
+        "welcome" : "Welcome",
+        "whyWebsite" : "So, What is this Website ?",
+        "whyWebsiteReason" : "First, Let me introduce myself. I am Kishore Prabhu. I am a Mechanical Engineer by education, Full-Stack Developer by profession (in near future), and a Game Developer by ambition. I wanted to develop a website from scratch, so that I could become more adept in my field.",
         "time" : "Time now is",
         "goodMorning" : "Good Morning",
         "goodAfternoon" : "Good Afternoon",
