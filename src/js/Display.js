@@ -5,6 +5,7 @@ import Navbar from './Navbar'
 import Home from './Home' 
 import About from './About'
 import Contact from './Contact'
+import Footer from './Footer'
 
 import ErrorPage from './utils/ErrorPage'
 import Dialogbox from './utils/Dialogbox'
@@ -100,15 +101,15 @@ class Display extends React.Component
 
 		return(
 			<BrowserRouter>
-				<div>
-					<Navbar data={{language: this.state.language, 
+				<div id="page-container">
+					<Navbar id ="top" data={{language: this.state.language, 
 						languageSwitch: this.languageSwitch.bind(this)}} />
-					
+
 					{backdrop}
 
 					{dialogbox}
 
-				 	<Switch>
+					<Switch>
 						<Route exact path="/" render={(props) => <Home {...props} currentLanguage={this.state.language} />} />
 						<Route path="/about" render={(props) => <About {...props} currentLanguage={this.state.language} />} />
 						<Route path="/contact" render={(props) => <Contact {...props} currentLanguage={this.state.language} />} />
@@ -116,9 +117,10 @@ class Display extends React.Component
 						{/* This one is ErrorPage, displayed when different URL is typed manually */}
 						<Route path="" component={ErrorPage} />
 					</Switch>
-
-
 				</div>
+
+				<Footer />
+
 			</BrowserRouter>
 		)
 	}

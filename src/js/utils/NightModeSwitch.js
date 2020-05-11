@@ -26,10 +26,11 @@ class NightModeSwitch extends React.Component
     
     render()
     {
+        console.log(this.props.displayLanguage)
         return(
             <div id="nightmode-switch" className="navbar-nav ml-auto nightmode">
                 <div className="nav-item menu-item">
-                    <p className="nightmode-label">Night Mode</p>
+                    <p className="nightmode-label">{this.props.displayLanguage.nightmode}</p>
                 <label className="switch">
                     <input type="checkbox" onChange={this.changeTheme} />
                     <span className="slider round"></span>

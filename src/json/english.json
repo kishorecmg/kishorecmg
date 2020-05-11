@@ -8,7 +8,8 @@
         "contact" : "Contact",
         "language" : "Language",
         "english" : "English",
-        "japanese" : "Japanese"
+        "japanese" : "Japanese",
+        "nightmode" : "Night Mode"
     },
 
     "homepage":
@@ -16,6 +17,22 @@
         "welcome" : "Welcome",
         "whyWebsite" : "So, What is this Website ?",
         "whyWebsiteReason" : "First, Let me introduce myself. I am Kishore Prabhu. I am a Mechanical Engineer by education, Full-Stack Developer by profession (in near future), and a Game Developer by ambition. I wanted to develop a website from scratch, so that I could become more adept in my field.",
+        
+        "technologiesUsed" : "Technologies used to make this website",
+        "htmlcssjsDescription" : "What page doesn't ? ",
+        "reactjsDescription" : "React JS is a Javascript library, and this one makes implementing Javascript a lot easier.",
+        "bootstrapDescription" : "If React JS makes Javascript implementation easy, Bootstrap makes CSS implementation easy. One just need to add classes and they are good to go.",
+        
+        "aboutThis" : "About this",
+        "aboutThisDescription" : "Want to know more about some more? Click any of below boxes.",
+        "aboutMe" : "About me",
+        "aboutMeDescription" : "\"The most least\" interesting content of this website, coming up!",
+        "aboutMeDescriptionUnder" : "Well, well, you made it this far.",
+        "aboutWebsite" : "About this Website", 
+        "aboutWebsiteDescription" : "A story of me and this website, how I made it, how much it took, and more.", 
+        "aboutWebsiteDescriptionUnder" : "Just a click away.", 
+        "knowMore" : "Know More",
+        
         "time" : "Time now is",
         "goodMorning" : "Good Morning",
         "goodAfternoon" : "Good Afternoon",

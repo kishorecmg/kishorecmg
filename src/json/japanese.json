@@ -8,14 +8,31 @@
         "contact" : "連絡",
         "language" : "言語",
         "english" : "英語",
-        "japanese" : "日本語"
+        "japanese" : "日本語",
+        "nightmode" : "ナイトモード"
     },
 
     "homepage":
     {
-        "welcome" : "ようこそ",
+        "welcome" : "ようこそ", 
         "whyWebsite" : "このウェブサイトのこと",
         "whyWebsiteReason" : "自己紹介させていただきます。私はキショールプラブ。教育で機械工学者、専門職でフルスタック開発者「目先に」、野望でゲーム開発者。ウェブサイトをゼロから開発した理由は、開発のことでもっと熟達のためです。",
+        
+        "technologiesUsed" : "このページで使用された技術",
+        "htmlcssjsDescription" : "どのウェブサイトがしないか？",
+        "reactjsDescription" : "React JSはJavascriptのライブラリでJavascriptの実装をもっと簡単にさせます。",
+        "bootstrapDescription" : "React JSのようにBootstrapはCSSの実装をもっと簡単にさせます。",
+        
+        "aboutThis" : "情報",
+        "aboutThisDescription" : "私とこのページのこともっと知りたい？　下のボックスをクリックください。",
+        "aboutMe" : "私のこと",
+        "aboutMeDescription" : "このページの一番最低な話",
+        "aboutMeDescriptionUnder" : "やったー！これまでできましたね",
+        "aboutWebsite" : "ウェブサイトのこと", 
+        "aboutWebsiteDescription" : "このページの作成方法", 
+        "aboutWebsiteDescriptionUnder" : "一つのクリックだけ。", 
+        "knowMore" : "もっと知る",
+
         "time" : "今の時刻は",
         "goodMorning" : "おはようございます",
         "goodAfternoon" : "こんにちは",

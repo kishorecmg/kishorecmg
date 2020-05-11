@@ -1,3 +1,5 @@
+/* Large devices like desktop and laptop */
+
 @media (min-width: 768px)
 {
   .navbar-nav > li > a {
@@ -8,6 +10,8 @@
   }
   
 }
+
+/* Medium devices like tablets */
 
 @media (min-width: 768px) and (max-width: 991px) 
 {
@@ -27,9 +31,28 @@
         padding-top: 26.5px;
         padding-bottom: 26.5px;
         line-height: 27px;
-      }
+    }
+
+    #Services
+    {
+      width: 75vw;
+      margin: 0px auto;
+    }
+
+    footer.footer .social-link {
+      height: 45px;
+      width: 45px;
+      font-size: 18px;
+    }
+    
+    .errorpage-text
+    {
+      font-size: 20vw;
+    }
 
 }
+
+/* Small devices like phones */
 
 @media (max-width: 768px) {
    
@@ -51,9 +74,27 @@
       font-size: 20px;
     }
 
-    .card
+    #Services
     {
       width: 75vw;
       margin: 0px auto;
+    }
+ 
+    .card
+    {
+      width: 75vw;
+      padding-bottom: 20px;
+      margin-bottom: 30px !important;
+    }
+
+    footer.footer .social-link {
+      width: 40px;
+      height: 40px;
+      font-size: 14px;
+    }
+
+    .errorpage-text
+    {
+      font-size: 20vw;
     }
 }

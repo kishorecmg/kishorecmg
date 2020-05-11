@@ -1,9 +1,10 @@
 import React from 'react'
+import 'flag-icon-css/css/flag-icon.css'
 
 import Banner from './home/Banner'
 import TechUsed from './home/TechUsed'
-
-// import image from '../img/Construction.png'
+import AboutHome from './home/AboutHome'
+import CounterBanner from './home/CounterBanner'
 
 class Home extends React.Component
 {   
@@ -22,7 +23,11 @@ class Home extends React.Component
                     </div>
                 </section>
 
-                <TechUsed />
+                <TechUsed displayLanguage={currentLang}/>
+
+                <CounterBanner />
+
+                <AboutHome displayLanguage={currentLang}/>
             </div>
     );
   }

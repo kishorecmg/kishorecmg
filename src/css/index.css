@@ -7,6 +7,11 @@
   --main-text-color : black;
 }
 
+#page-container {
+  position: relative;
+  min-height: 75vh;
+}
+
 body 
 {
   margin: 0;
@@ -17,6 +22,7 @@ body
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
   font-weight: 400;
+  scroll-behavior: smooth;
   
   background-color: var(--main-background-color);
   color : var(--main-text-color)
@@ -27,6 +33,27 @@ code
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Error page starts */
+
+.errorpage-image
+{
+    background-image: url("../img/errorpage.jpg");
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+}
+
+.errorpage-text
+{
+  font-size: 12vw;
+  font-weight: bolder;
+  text-align: center;
+}
+
+/* Error page ends */
 
 /* Nav bar yaa */
 
@@ -89,8 +116,8 @@ a.menu-item:hover
 
 #nightmode-switch
 {
-  /* background-color: red; */
   margin-right: 30px;
+  padding-top: 5px;
 }
 
 
@@ -218,7 +245,7 @@ input:checked + .slider:before {
 
 section.tech-used
 {
-   margin-bottom: 45px;
+   margin-bottom: 20px;
    background-color: var(--main-background-light-grey);
 }
 
@@ -228,7 +255,6 @@ section.tech-used
   padding: 30px 0px 15px 0px;
   text-align: center;
   color: var(--main-text-color);
-  /* background-color: red; */
 }
 
 .card
@@ -240,3 +266,259 @@ section.tech-used
 }
 
 /* TechUsed ends */ 
+
+/* AboutHome starts */
+
+#about-home.container
+{
+   margin: 20px auto 40px;
+}
+
+#Services 
+{
+  background-color: var(--main-background-color);
+}
+
+.about-home-heading
+{
+  margin-bottom: 40px;
+}
+
+#Services .service-box 
+{
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 10px;
+  perspective: 1000px;
+  -webkit-perspective: 1000px;
+}
+#Services .service-icon 
+{
+  width: 100%;
+  height: 220px;
+  padding: 20px;
+  text-align: center;
+  transition: all .5s ease;
+}
+
+#Services .service-content
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0;
+  width: 100%;
+  height: 220px;
+  padding: 20px;
+  text-align: center;
+  transition: all .5s ease;
+  background-color: #888;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  -webkit-transform: translateY(110px) rotateX(-90deg);
+  -moz-transform: translateY(110px) rotateX(-90deg);
+  -ms-transform: translateY(110px) rotateX(-90deg);
+  -o-transform: translateY(110px) rotateX(-90deg);
+  transform: translateY(110px) rotateX(-90deg);
+}
+#Services .service-box .service-icon .front-content 
+{
+  position: relative;
+  top: 80px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#Services .service-box .service-icon .front-content h3, #Services .service-box .service-content h3 
+{
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 15px;
+}
+#Services .service-box .front-content p, #Services .service-box .service-content p 
+{
+  font-size: 16px;
+  color: #fff;
+  margin: 0;
+}
+
+
+#Services .service-box .blue 
+{
+  background-color: #02b3e4;
+}
+#Services .service-box .green 
+{
+  background-color: #02ccba;
+}
+
+#Services .service-box:hover .service-icon 
+{
+  opacity: 0;
+  -webkit-transform: translateY(-110px) rotateX(90deg);
+  -moz-transform: translateY(-110px) rotateX(90deg);
+  -ms-transform: translateY(-110px) rotateX(90deg);
+  -o-transform: translateY(-110px) rotateX(90deg);
+  transform: translateY(-110px) rotateX(90deg);
+}
+#Services .service-box:hover .service-content 
+{
+  opacity: 1;
+  -webkit-transform: rotateX(0);
+  -moz-transform: rotateX(0);
+  -ms-transform: rotateX(0);
+  -o-transform: rotateX(0);
+  transform: rotateX(0);
+}
+
+.about-home-link
+{
+  margin: 20px auto;
+}
+
+/* AboutHome ends */
+
+/* Counter banner starts */
+
+/* div.counter-banner
+{
+  background-color: var(--main-background-color);
+  margin: 0px auto 40px;
+}
+
+div.counter-element
+{
+  margin: 40px auto 30px;
+  color: var(--main-text-color);
+  font-size: large;
+  position: relative;
+  padding-bottom: 55px;
+}
+
+.counter-element span
+{
+  font-weight: bold;
+  color: brown;
+  font-size: 40px;
+  position: absolute;
+  bottom: 0;
+} */
+#mu-counter {
+	background-size: cover;
+	/* display: inline; */
+	float: left;
+	position: relative;
+  width: 100%;
+  margin-bottom: 50px;
+  margin-top: -30px;
+}
+
+#mu-counter::before {
+	bottom: 0;
+	content: '';
+	left: 0;
+	top: 0;
+	right: 0;
+	position: absolute;
+	opacity: 0.65;
+	background-color: var(--main-background-color);
+}
+
+.mu-counter-area {
+	/* display: inline; */
+	float: left;
+	padding: 100px 0;
+	width: 100%;
+}
+
+.mu-counter-area h2 {
+	color: var(--main-text-color);
+	text-align: center;
+}
+
+.mu-counter-block {
+	/* display: inline; */
+	float: left;
+	width: 100%;
+}
+
+.mu-single-counter {
+	/* display: inline; */
+	float: left;
+	text-align: center;
+	width: 100%;
+}
+
+.mu-single-counter span {
+	border-right: 1px solid var(--main-text-color);
+	color: var(--main-text-color);
+	font-size: 40px;
+	padding: 32px 20px;
+	margin-bottom: 0px;
+	/* display: inline-block; */
+	float: left;
+}
+
+.mu-single-counter-content {
+	/* display: inline; */
+	float: left;
+	text-align: left;
+	padding-left: 20px;
+	padding-top: 16px;
+}
+
+.counter-value {
+	font-size: 36px;
+	font-weight: 700;
+	margin-bottom: 0;
+	color: var(--main-text-color);
+	line-height: 1.2;
+}
+
+.mu-counter-name {
+	color: var(--main-text-color);
+	font-weight: 400;
+	font-size: 18px;
+}
+
+.counter-text
+{
+  color: var(--main-text-color);
+  margin-bottom: 50px;
+
+}
+
+/* Counter banner ends */
+
+/* Footer starts */
+footer.footer {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  background-color: var(--main-background-light-grey);
+  
+}
+footer.footer .social-link {
+  display: block;
+  height: 55px;
+  width: 55px;
+  font-size: 20px;
+  background-color: #02ccba;
+  border: none;
+  padding: 10px;
+}
+footer.footer .social-link:hover {
+	background-color: #07bcab;
+}
+
+.footer-text
+{
+    color: var(--main-text-color);
+    font-size: 12px;
+}
+
+/* Footer ends */
