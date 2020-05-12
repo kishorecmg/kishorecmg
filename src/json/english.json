@@ -14,6 +14,14 @@
 
     "homepage":
     {
+        "time" : "Time now is",
+        "goodMorning" : "Good Morning",
+        "goodAfternoon" : "Good Afternoon",
+        "goodEvening" : "Good Evening",
+        "goodNight" : "Good Night",
+        "midnight" : "It's almost midnight",
+        "prettyQuick" : "You got up pretty quick",
+
         "welcome" : "Welcome",
         "whyWebsite" : "So, What is this Website ?",
         "whyWebsiteReason" : "First, Let me introduce myself. I am Kishore Prabhu. I am a Mechanical Engineer by education, Full-Stack Developer by profession (in near future), and a Game Developer by ambition. I wanted to develop a website from scratch, so that I could become more adept in my field.",
@@ -23,6 +31,11 @@
         "reactjsDescription" : "React JS is a Javascript library, and this one makes implementing Javascript a lot easier.",
         "bootstrapDescription" : "If React JS makes Javascript implementation easy, Bootstrap makes CSS implementation easy. One just need to add classes and they are good to go.",
         
+        "statisticsHeading" : "Some nice statistics on this page",
+        "programming" : "Hours of Programming",
+        "coffee" : "Cups of Coffee",
+        "thinking" : "Hours of Thinking",
+
         "aboutThis" : "About this",
         "aboutThisDescription" : "Want to know more about some more? Click any of below boxes.",
         "aboutMe" : "About me",
@@ -31,15 +44,7 @@
         "aboutWebsite" : "About this Website", 
         "aboutWebsiteDescription" : "A story of me and this website, how I made it, how much it took, and more.", 
         "aboutWebsiteDescriptionUnder" : "Just a click away.", 
-        "knowMore" : "Know More",
-        
-        "time" : "Time now is",
-        "goodMorning" : "Good Morning",
-        "goodAfternoon" : "Good Afternoon",
-        "goodEvening" : "Good Evening",
-        "goodNight" : "Good Night",
-        "midnight" : "It's almost midnight",
-        "prettyQuick" : "You got up pretty quick"
+        "knowMore" : "Know More"
     },
 
     "contact" :
@@ -60,5 +65,11 @@
         "description" : "To change the language again, click the languages list tab.",
         "agree" : "Agree",
         "disagree" : "Disagree"
+    },
+
+    "errorpage" :
+    {
+        "error404" : "Error 404",
+        "clickhome" : "You have strayed from the path. Seek \"Home\" to return to the beaten path."
     }
 }

@@ -408,7 +408,8 @@ div.counter-element
   position: absolute;
   bottom: 0;
 } */
-#mu-counter {
+#mu-counter 
+{
 	background-size: cover;
 	/* display: inline; */
 	float: left;
@@ -418,7 +419,8 @@ div.counter-element
   margin-top: -30px;
 }
 
-#mu-counter::before {
+#mu-counter::before 
+{
 	bottom: 0;
 	content: '';
 	left: 0;
@@ -436,25 +438,29 @@ div.counter-element
 	width: 100%;
 }
 
-.mu-counter-area h2 {
+.mu-counter-area h2 
+{
 	color: var(--main-text-color);
 	text-align: center;
 }
 
-.mu-counter-block {
+.mu-counter-block 
+{
 	/* display: inline; */
 	float: left;
 	width: 100%;
 }
 
-.mu-single-counter {
+.mu-single-counter 
+{
 	/* display: inline; */
 	float: left;
 	text-align: center;
 	width: 100%;
 }
 
-.mu-single-counter span {
+.mu-single-counter span 
+{
 	border-right: 1px solid var(--main-text-color);
 	color: var(--main-text-color);
 	font-size: 40px;
@@ -464,7 +470,8 @@ div.counter-element
 	float: left;
 }
 
-.mu-single-counter-content {
+.mu-single-counter-content 
+{
 	/* display: inline; */
 	float: left;
 	text-align: left;
@@ -472,7 +479,8 @@ div.counter-element
 	padding-top: 16px;
 }
 
-.counter-value {
+.counter-value 
+{
 	font-size: 36px;
 	font-weight: 700;
 	margin-bottom: 0;
@@ -480,7 +488,8 @@ div.counter-element
 	line-height: 1.2;
 }
 
-.mu-counter-name {
+.mu-counter-name
+{
 	color: var(--main-text-color);
 	font-weight: 400;
 	font-size: 18px;
@@ -496,10 +505,12 @@ div.counter-element
 /* Counter banner ends */
 
 /* Footer starts */
-footer.footer {
+
+footer.footer 
+{
   padding-top: 35px;
   padding-bottom: 35px;
-  background-color: var(--main-background-light-grey);
+  background-color: var(--main-navbar);
   
 }
 footer.footer .social-link {
@@ -507,17 +518,18 @@ footer.footer .social-link {
   height: 55px;
   width: 55px;
   font-size: 20px;
-  background-color: #02ccba;
+  background-color: var(--main-navbar);
   border: none;
   padding: 10px;
 }
-footer.footer .social-link:hover {
-	background-color: #07bcab;
+footer.footer .social-link:hover 
+{
+  background-color: #066eaf;
 }
 
 .footer-text
 {
-    color: var(--main-text-color);
+    color: var(--main-navbar-text);
     font-size: 12px;
 }
 

@@ -14,7 +14,7 @@ class CounterBanner extends React.Component
         let startDate = new Date("2020/5/2")
         let today = new Date()
 
-        // difference is obtained in milliseconds, so dividing by 86400000
+        // difference is obtained in milliseconds, so dividing by 86400000 to get value in days
 
         let difference = Math.round(Math.abs(today - startDate)/86400000) 
 
@@ -24,41 +24,41 @@ class CounterBanner extends React.Component
         
         return(
             <section id="mu-counter">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="mu-counter-area">
-                        <h2 className="counter-text">Some nice statistics</h2>
+			<div className="container">
+				<div className="row">
+					<div className="col-md-12">
+						<div className="mu-counter-area">
+                        <h2 className="counter-text">{this.props.displayLanguage.statisticsHeading}</h2>
 
-							<div class="mu-counter-block">
-								<div class="row">
+							<div className="mu-counter-block">
+								<div className="row">
 
-									<div class="col-md-4 col-sm-6">
-										<div class="mu-single-counter">
-											<span class="counter-icon"> <CodeIcon style={{ fontSize: 40 }}/></span>
-											<div class="mu-single-counter-content">
-												<div class="counter-value"><Counter start={0} end={hours} /></div>
-												<h5 class="mu-counter-name">Hours of Programming</h5>
+									<div className="col-md-4 col-sm-6">
+										<div className="mu-single-counter">
+											<span className="counter-icon"> <CodeIcon style={{ fontSize: 40 }}/></span>
+											<div className="mu-single-counter-content">
+												<div className="counter-value"><Counter start={0} end={hours} /></div>
+												<h5 className="mu-counter-name">{this.props.displayLanguage.programming}</h5>
 											</div>
 										</div>
 									</div>
 
-									<div class="col-md-4 col-sm-6">
-										<div class="mu-single-counter">
-                                        <span class="counter-icon"> <LocalCafeRoundedIcon style={{ fontSize: 40 }}/></span>
-											<div class="mu-single-counter-content">
-												<div class="counter-value"><Counter start={0} end={coffee}/></div>
-												<h5 class="mu-counter-name">Cups of Coffee</h5>
+									<div className="col-md-4 col-sm-6">
+										<div className="mu-single-counter">
+                                        <span className="counter-icon"> <LocalCafeRoundedIcon style={{ fontSize: 40 }}/></span>
+											<div className="mu-single-counter-content">
+												<div className="counter-value"><Counter start={0} end={coffee}/></div>
+												<h5 className="mu-counter-name">{this.props.displayLanguage.coffee}</h5>
 											</div>
 										</div>
 									</div>
 
-									<div class="col-md-4 col-sm-6">
-										<div class="mu-single-counter">
-                                        <span class="counter-icon"> <QueryBuilderIcon style={{ fontSize: 40 }}/></span>
-											<div class="mu-single-counter-content">
-												<div class="counter-value"><Counter start={0} end={timeThinking}/></div>
-												<h5 class="mu-counter-name">Hours of Thinking</h5>
+									<div className="col-md-4 col-sm-6">
+										<div className="mu-single-counter">
+                                        <span className="counter-icon"> <QueryBuilderIcon style={{ fontSize: 40 }}/></span>
+											<div className="mu-single-counter-content">
+												<div className="counter-value"><Counter start={0} end={timeThinking}/></div>
+												<h5 className="mu-counter-name">{this.props.displayLanguage.thinking}</h5>
 											</div>
 										</div>
 									</div>

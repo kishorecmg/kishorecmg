@@ -7,8 +7,6 @@ class Counter extends React.Component
         super(props)
         this.state = {intervalId: 0, currentCount: this.props.start}
         this.timer = this.timer.bind(this)
-
-        console.log(this.props.speed)
     }
 
     componentDidMount() 

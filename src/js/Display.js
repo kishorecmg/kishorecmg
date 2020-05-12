@@ -115,7 +115,7 @@ class Display extends React.Component
 						<Route path="/contact" render={(props) => <Contact {...props} currentLanguage={this.state.language} />} />
 						
 						{/* This one is ErrorPage, displayed when different URL is typed manually */}
-						<Route path="" component={ErrorPage} />
+						<Route path="" render={(props) => <ErrorPage {...props} currentLanguage={this.state.language} />} />
 					</Switch>
 				</div>
 

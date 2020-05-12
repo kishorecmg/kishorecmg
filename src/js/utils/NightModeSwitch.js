@@ -5,7 +5,6 @@ class NightModeSwitch extends React.Component
     changeTheme(event)
     {
         var qing = event.target.checked;
-        // console.log(qing)
         
         if(qing) // Night-mode on
         {
@@ -26,7 +25,6 @@ class NightModeSwitch extends React.Component
     
     render()
     {
-        console.log(this.props.displayLanguage)
         return(
             <div id="nightmode-switch" className="navbar-nav ml-auto nightmode">
                 <div className="nav-item menu-item">

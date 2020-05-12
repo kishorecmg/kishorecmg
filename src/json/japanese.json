@@ -11,9 +11,17 @@
         "japanese" : "日本語",
         "nightmode" : "ナイトモード"
     },
-
+    
     "homepage":
     {
+        "time" : "今の時刻は",
+        "goodMorning" : "おはようございます",
+        "goodAfternoon" : "こんにちは",
+        "goodEvening" : "こんばんは",
+        "goodNight" : "おやすみなさい",
+        "midnight" : "夜中です",
+        "prettyQuick" : "早く起きましたね",
+
         "welcome" : "ようこそ", 
         "whyWebsite" : "このウェブサイトのこと",
         "whyWebsiteReason" : "自己紹介させていただきます。私はキショールプラブ。教育で機械工学者、専門職でフルスタック開発者「目先に」、野望でゲーム開発者。ウェブサイトをゼロから開発した理由は、開発のことでもっと熟達のためです。",
@@ -23,6 +31,11 @@
         "reactjsDescription" : "React JSはJavascriptのライブラリでJavascriptの実装をもっと簡単にさせます。",
         "bootstrapDescription" : "React JSのようにBootstrapはCSSの実装をもっと簡単にさせます。",
         
+        "statisticsHeading" : "このページのいい統計",
+        "programming" : "時間のコード",
+        "coffee" : "杯のコーヒー",
+        "thinking" : "時間の考え",
+
         "aboutThis" : "情報",
         "aboutThisDescription" : "私とこのページのこともっと知りたい？　下のボックスをクリックください。",
         "aboutMe" : "私のこと",
@@ -31,15 +44,7 @@
         "aboutWebsite" : "ウェブサイトのこと", 
         "aboutWebsiteDescription" : "このページの作成方法", 
         "aboutWebsiteDescriptionUnder" : "一つのクリックだけ。", 
-        "knowMore" : "もっと知る",
-
-        "time" : "今の時刻は",
-        "goodMorning" : "おはようございます",
-        "goodAfternoon" : "こんにちは",
-        "goodEvening" : "こんばんは",
-        "goodNight" : "おやすみなさい",
-        "midnight" : "夜中です",
-        "prettyQuick" : "早く起きましたね"
+        "knowMore" : "もっと知る"
     },
 
     "contact" :
@@ -60,6 +65,12 @@
         "description" : "また言語を変えるに、言語のタブをクリックください。",
         "agree" : "はい",
         "disagree" : "いいえ"
+    },
+
+    "errorpage" :
+    {
+        "error404" : "エラー404",
+        "clickhome" : "進路から外れたそうですね。「ホーム」をクリックしてお戻りください。"
     }
 }
 

@@ -7,10 +7,10 @@ class ErrorPage extends React.Component
         return(
             <div>
                 <div className="errorpage-image">
-                    <h1 className="errorpage-text">Error 404</h1>
+                    <h1 className="errorpage-text">{this.props.currentLanguage.errorpage.error404}</h1>
                 </div>
 
-                <h5 className="text-center">You have strayed from the path. Seek retribution by clicking Home.</h5>
+                <h5 className="text-center">{this.props.currentLanguage.errorpage.clickhome}</h5>
             </div>
         )
     }

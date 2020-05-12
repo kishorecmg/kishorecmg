@@ -25,7 +25,7 @@ class Home extends React.Component
 
                 <TechUsed displayLanguage={currentLang}/>
 
-                <CounterBanner />
+                <CounterBanner  displayLanguage={currentLang}/>
 
                 <AboutHome displayLanguage={currentLang}/>
             </div>

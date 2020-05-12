@@ -18,7 +18,7 @@ class Footer extends React.Component
               <div className="container">
                 <ul className="list-inline">
                   <li className="list-inline-item">
-                  <a href="https://https://twitter.com/KishoreCMG"><Twitter className="social-link rounded-circle text-white mr-3" /></a>
+                  <a href="https://twitter.com/KishoreCMG"><Twitter className="social-link rounded-circle text-white mr-3" /></a>
                   </li>
                   <li className="list-inline-item">
                   <a href="https://www.instagram.com/_kishorecmg_/"><Instagram className="social-link rounded-circle text-white mr-3" /></a>

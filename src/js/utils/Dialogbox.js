@@ -44,18 +44,15 @@ class Dialogbox extends React.Component
     this.handleClickOpen = this.handleClickOpen.bind(this)
     this.handleCloseFalse = this.handleCloseFalse.bind(this)
     this.handleCloseTrue = this.handleCloseTrue.bind(this)
-    console.log("constructor")
   }
 
   componentDidMount()
   {
-    console.log("componentdidmount")
     this.handleClickOpen()
   }
 
   componentWillUnmount()
   {
-    console.log("componentwillunmount")
     this.setState({open:false})
   }
 
