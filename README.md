@@ -1,68 +1,68 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Welcome
 
-## Available Scripts
+This Github repository contains source code for my website, [kishorecmg.herokuapp.com](https://kishorecmg.herokuapp.com).
 
-In the project directory, you can run:
+Please note that this source code is not how the project is deployed.
 
-### `npm start`
+# Introduction
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+There are several languages and frameworks involved in this website production. They are,
+  - HTML, CSS and JavaScript
+  - React JS
+  - Node JS
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+I thought that creating a React app with Node JS backend would be easy, but it was proved wrong, and I never thought web development would be this challenging.
 
-### `npm test`
+Some one on the internet once told,
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+> In Programming, time spent is actually in,
+> 70% of thinking
+> 25% of error handling and
+> 5% is the actual typing.
 
-### `npm run build`
+And I *guess* and I *realized* that this is not wrong.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Usage rights
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Um, there is nothing constraining you from copying this code. Actually, I will be happy if this one is actually helpful to someone.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### How to use the source code to create your own website?
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+*Some knowledge in HTML, CSS, JavaScript, React JS and Node JS is required beyond this*
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Install NPM package manager from [here](https://www.npmjs.com). Node JS would be automatically downloaded along with Node Package Manager. NPM is a amazing JavaScript library that has almost everything that would suit our needs. 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Start by installing Express in a seperate folder
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```sh
+npm install express
+```
 
-## Learn More
+Install React JS library in a seperate folder
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```sh
+npm install create-react-app
+```
+After creating the react app and node js server, use
+```
+npm run build
+```
+in create-react-app folder. Copy the contents of the **build** folder to the folder where Node JS is installed. Then 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+node index
+```
 
-### Code Splitting
+should do the trick.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+For someone who wants to know from where I learnt React JS and Node JS, here are some *noice* websites and YouTube websites that might be helpful for you as well.
 
-### Analyzing the Bundle Size
+* [The Net Ninja](https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg/playlists)
+* [freeCodeCamp.org](https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ/videos)
+* [Scrimba](https://scrimba.com)
+* And lastly, [Stack Overflow](https://stackoverflow.com)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+Scrimba is an amazing website for learning front-end easily, and this website is really innovative, that you could pause video and directly type your code!
 
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+#### Thank you for reading. More information on the website.

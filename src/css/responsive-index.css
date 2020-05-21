@@ -90,6 +90,28 @@
     }
 
     /* Counter ends */
+
+    /* Comment section starts */
+
+    .comment-picture
+    {
+      width: 100%;
+    }
+
+    .comment-body
+    {
+      text-align: left;
+      font-size: small;
+      margin: 15px auto;
+    }
+
+    /* Comment section ends */
+
+    /* Contact page starts */
+
+   
+
+    /* Contact page ends */
 }
 
 /* Small devices like phones */
@@ -186,4 +208,35 @@
     }
 
     /* Counter ends */
+
+    /* Comment section starts */
+
+    .comment-picture
+    {
+      width: 20%;
+    }
+
+    .comment-body
+    {
+      text-align: left;
+      font-size: small;
+      margin: 15px auto;
+    }
+
+    /* Comment section ends */
+
+    /* Contact page starts */
+
+    .contact-heading
+    {
+      font-size: 50px;
+    }
+
+    .contact-form-textarea
+    {
+      min-height: 100px;
+      max-height: 100px;
+    }
+
+    /* contact page ends */
 }

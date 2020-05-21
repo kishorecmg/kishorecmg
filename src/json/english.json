@@ -30,6 +30,7 @@
         "htmlcssjsDescription" : "What page doesn't ? ",
         "reactjsDescription" : "React JS is a Javascript library, and this one makes implementing Javascript a lot easier.",
         "bootstrapDescription" : "If React JS makes Javascript implementation easy, Bootstrap makes CSS implementation easy. One just need to add classes and they are good to go.",
+        "nodejsDescription" : "Every page needs some nice backend to make it dynamic. Node JS is here to help.",
         
         "statisticsHeading" : "Some nice statistics on this page",
         "programming" : "Hours of Programming",
@@ -44,13 +45,22 @@
         "aboutWebsite" : "About this Website", 
         "aboutWebsiteDescription" : "A story of me and this website, how I made it, how much it took, and more.", 
         "aboutWebsiteDescriptionUnder" : "Just a click away.", 
-        "knowMore" : "Know More"
+        "knowMore" : "Know More",
+
+        "commentsHead" : "Comments",
+        "saySomething" : "Want to say something public on this website?",
+        "cantFetchComments" : "Something happened and cannot fetch comments just now.",
+        "alreadyEntered" : "It seems you have already entered your opinion.",
+        "commentButton" : "Comment",
+        "enterName" : "Enter your name *",
+        "enterEmail" : "Enter your E-mail ID *",
+        "enterBody" : "What are you thinking ? * (Max 255 characters)"
     },
 
     "contact" :
     {
         "heading" : "Contact page",
-        "fillText" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        "fillText" : "Want to say something in private about this page or have any suggestions?"
     },
 
     "about" :

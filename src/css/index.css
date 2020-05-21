@@ -55,6 +55,8 @@ code
 
 /* Error page ends */
 
+/* Home page starts, ends at 603 */
+
 /* Nav bar yaa */
 
 .navbar 
@@ -108,6 +110,11 @@ a.menu-item:hover
 .active
 {
   background-color: var(--main-navbar-text);
+}
+
+.navigation-language-selection
+{
+  cursor: pointer;
 }
 
 /* Nav bar ends */
@@ -245,8 +252,14 @@ input:checked + .slider:before {
 
 section.tech-used
 {
-   margin-bottom: 20px;
+   margin: 0px auto 20px;
    background-color: var(--main-background-light-grey);
+}
+
+.tech-used-container
+{
+  margin: 0px 5%;
+  padding-bottom: 10px ;
 }
 
 .tech-used-head
@@ -385,29 +398,6 @@ section.tech-used
 
 /* Counter banner starts */
 
-/* div.counter-banner
-{
-  background-color: var(--main-background-color);
-  margin: 0px auto 40px;
-}
-
-div.counter-element
-{
-  margin: 40px auto 30px;
-  color: var(--main-text-color);
-  font-size: large;
-  position: relative;
-  padding-bottom: 55px;
-}
-
-.counter-element span
-{
-  font-weight: bold;
-  color: brown;
-  font-size: 40px;
-  position: absolute;
-  bottom: 0;
-} */
 #mu-counter 
 {
 	background-size: cover;
@@ -504,6 +494,88 @@ div.counter-element
 
 /* Counter banner ends */
 
+/* Comments start */
+
+.entire-commentsection
+{
+  margin: 10% auto;
+}
+
+.comment-cantfetch
+{
+  text-align: center;
+}
+
+.comment-loading
+{
+  margin: 0 40vw;
+}
+
+.comment-section
+{
+  margin: 5% auto;
+  text-align: left;
+}
+
+.comment-form .form-control
+{
+  border-radius:1rem;
+  margin: 10px auto;
+  background-color: var(--main-background-light-grey);
+  color: var(--main-text-color);
+}
+
+.comment-form .form-control::placeholder 
+{ 
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #a5a5a5;
+  opacity: 1; /* Firefox */
+}
+
+.comment-button 
+{
+	background-color:#44c767;
+	border-radius:25px;
+	border:1px solid #18ab29;
+	color:#ffffff;
+  padding: 10px 100px;
+  margin: auto;
+}
+.comment-button:hover 
+{
+	background-color:#5cbf2a;
+}
+.comment-button:active 
+{
+	position:relative;
+	top:1px;
+}
+
+.comment-picture
+{
+  width: 100%;
+}
+
+.comment-body
+{
+  text-align: left;
+  margin: 15px auto;
+}
+
+.comment-footer
+{
+  font-size: x-small;
+  text-align: right;
+  padding: 2px;
+}
+
+.comment-already
+{
+  margin: 10px auto;
+}
+
+/* Comments end */
+
 /* Footer starts */
 
 footer.footer 
@@ -534,3 +606,99 @@ footer.footer .social-link:hover
 }
 
 /* Footer ends */
+
+/* Home page ends */
+
+/* Contact page starts */
+
+#contact-mainone 
+{
+  position: relative;
+  height: 100vh;
+  background-position: center center;
+  background-image: url("../img/contact/contactbackground.jpg");
+  color: #fff;
+  margin-top: -15px;
+  padding-top: 20px;
+  background-size: cover;
+}
+
+.contact-heading
+{
+  text-align: center;
+  font-size: 60px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  /* Adds a border to text */
+}
+
+.contact-para
+{
+  text-align: center;
+  margin: 25px auto;
+}
+
+.contact-form-origin
+{
+  margin: 10px 5%;
+}
+
+.contact-form .form-control
+{
+  border-radius:1rem;
+  margin: 10px auto;
+  background-color: var(--main-background-light-grey);
+  color: var(--main-text-color);
+  text-indent: 30px;
+}
+
+.contact-form .form-control::placeholder 
+{ 
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #a5a5a5;
+  opacity: 1; /* Firefox */
+}
+
+.contact-form-icon
+{
+  position: absolute; 
+  color: var(--main-text-color); 
+  margin: 7px;
+}
+
+.contact-form-textarea
+{
+  min-height: 100px;
+  max-height: 270px;
+}
+
+.contact-button 
+{
+	background-color:#48d4ff;
+	border-radius:25px;
+	border:1px solid #31c3f0;
+	color:#ffffff;
+  padding: 10px 100px;
+  margin: 40px auto;
+}
+.contact-button:hover 
+{
+	background-color:#1bcaff;
+}
+.contact-button:active 
+{
+	position:relative;
+	top:1px;
+}
+
+.contact-form-info
+{
+  font-size: small;
+  margin: 0 5%;
+}
+
+.contact-form-info-inter
+{
+  margin: 5px;
+}
+
+
+/* Contact page ends */

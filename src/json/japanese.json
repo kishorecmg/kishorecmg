@@ -30,6 +30,7 @@
         "htmlcssjsDescription" : "どのウェブサイトがしないか？",
         "reactjsDescription" : "React JSはJavascriptのライブラリでJavascriptの実装をもっと簡単にさせます。",
         "bootstrapDescription" : "React JSのようにBootstrapはCSSの実装をもっと簡単にさせます。",
+        "nodejsDescription" : "動的なページの作成にはNode JSが手伝います。",
         
         "statisticsHeading" : "このページのいい統計",
         "programming" : "時間のコード",
@@ -44,7 +45,16 @@
         "aboutWebsite" : "ウェブサイトのこと", 
         "aboutWebsiteDescription" : "このページの作成方法", 
         "aboutWebsiteDescriptionUnder" : "一つのクリックだけ。", 
-        "knowMore" : "もっと知る"
+        "knowMore" : "もっと知る",
+
+        "commentsHead" : "コメント",
+        "saySomething" : "意見を公共で言いたいんですか？",
+        "cantFetchComments" : "何かあったので、今はコメント出来ません。",
+        "alreadyEntered" : "もう意見をコメントしまったようですね。",
+        "commentButton" : "コメント",
+        "enterName" : "氏名 *",
+        "enterEmail" : "電子メール　*",
+        "enterBody" : "何のこと * 「文字数最大255」"
     },
 
     "contact" :

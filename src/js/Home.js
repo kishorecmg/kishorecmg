@@ -5,6 +5,7 @@ import Banner from './home/Banner'
 import TechUsed from './home/TechUsed'
 import AboutHome from './home/AboutHome'
 import CounterBanner from './home/CounterBanner'
+import CommentMan from './home/CommentMan'
 
 class Home extends React.Component
 {   
@@ -28,6 +29,8 @@ class Home extends React.Component
                 <CounterBanner  displayLanguage={currentLang}/>
 
                 <AboutHome displayLanguage={currentLang}/>
+                
+                <CommentMan displayLanguage={currentLang} />
             </div>
     );
   }
