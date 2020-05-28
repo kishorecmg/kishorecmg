@@ -14,7 +14,7 @@ class Home extends React.Component
         let currentLang = this.props.currentLanguage.homepage;
         
         return(
-            <div>
+            <div className="entire-home">
                 <Banner displayLanguage={currentLang}/>
 
                 <section className="why-a-website">

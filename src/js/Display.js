@@ -3,14 +3,18 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 import Navbar from './Navbar'
 import Home from './Home' 
-import About from './About'
 import Contact from './Contact'
 import Footer from './Footer'
+import About from './About'
+
+import AboutMe from './about/AboutMe'
+import AboutPage from './about/AboutPage'
 
 import ErrorPage from './utils/ErrorPage'
 import Dialogbox from './utils/Dialogbox'
 import LoadingScreen from './utils/LoadingScreen'
 
+import tamil from '../json/tamil.json'
 import english from '../json/english.json'
 import japanese from '../json/japanese.json'
 
@@ -54,7 +58,11 @@ class Display extends React.Component
 
 				setTimeout(()=> {this.setState({isBackdrop: false})}, 2500)
 				
-				if(this.state.changedLang === "en")
+				if(this.state.changedLang === "ta")
+				{
+					setTimeout(()=> {this.setState({language: tamil})}, 2000)   
+				}
+				else if(this.state.changedLang === "en")
 				{
 					setTimeout(()=> {this.setState({language: english})}, 2000)   
 				}
@@ -111,8 +119,11 @@ class Display extends React.Component
 
 					<Switch>
 						<Route exact path="/" render={(props) => <Home {...props} currentLanguage={this.state.language} />} />
-						<Route path="/about" render={(props) => <About {...props} currentLanguage={this.state.language} />} />
-						<Route path="/contact" render={(props) => <Contact {...props} currentLanguage={this.state.language} />} />
+						<Route exact path="/about" render={(props) => <About {...props} currentLanguage={this.state.language} />} />
+						<Route exact path="/contact" render={(props) => <Contact {...props} currentLanguage={this.state.language} />} />
+
+						<Route path="/about/myself" render={(props) => <AboutMe {...props} currentLanguage={this.state.language} />} />
+						<Route path="/about/webpage" render={(props) => <AboutPage {...props} currentLanguage={this.state.language} />} />
 						
 						{/* This one is ErrorPage, displayed when different URL is typed manually */}
 						<Route path="" render={(props) => <ErrorPage {...props} currentLanguage={this.state.language} />} />

@@ -51,7 +51,7 @@ class Contact extends React.Component
         let successMessage = <p className="contact-form-info-inter"></p>
         if(this.state.mailSent)
         {
-            successMessage = <p className="contact-form-info-inter" style={{textAlign: 'center'}}>Mail sent successfully.</p>
+            successMessage = <p className="contact-form-info-inter" style={{textAlign: 'center'}}>{currentLang.mailSent}</p>
         }
 
         return(
@@ -69,7 +69,7 @@ class Contact extends React.Component
                                     type="text"
                                     className="form-control"
                                     name="namae"
-                                    placeholder="Enter your name *"
+                                    placeholder={currentLang.enterName}
                                     value={this.state.namae}
                                     required
                                 />
@@ -79,7 +79,7 @@ class Contact extends React.Component
                                     type="email"
                                     className="form-control"
                                     name="emailId"
-                                    placeholder="Enter your E-mail ID *"
+                                    placeholder={currentLang.enterEmail}
                                     value={this.state.emailId}
                                     required
                                 />
@@ -89,7 +89,7 @@ class Contact extends React.Component
                                     type="text"
                                     name="subject"
                                     className="form-control"
-                                    placeholder="Subject"
+                                    placeholder={currentLang.enterSubject}
                                     value={this.state.subject}
                                 />
                         </div>
@@ -103,22 +103,22 @@ class Contact extends React.Component
                                 type="text"
                                 name="body"
                                 className="form-control contact-form-textarea"
-                                placeholder="What are you thinking ?*"
+                                placeholder={currentLang.enterBody}
                                 value={this.state.body}
                                 required
                                 />
                         </div>
                     </div>
 
-                    <button type="submit" className="contact-button" name="submit" id="submit-comment">Send E-mail</button>
+                    <button type="submit" className="contact-button" name="submit" id="submit-comment">{currentLang.submitButton}</button>
 
                 </div>
                 </form>
 
                 <div className="contact-form-info">
                     {successMessage}
-                    <p className="contact-form-info-inter">Fields required are marked by *</p>
-                    <p className="contact-form-info-inter">By entering your E-mail ID, you are sharing it to me.</p>
+                    <p className="contact-form-info-inter">{currentLang.required}</p>
+                    <p className="contact-form-info-inter">{currentLang.sharing}</p>
                 </div>
                
                 

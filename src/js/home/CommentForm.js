@@ -2,6 +2,11 @@ import React from 'react'
 import axios from 'axios'
 import Cookies from 'universal-cookie'
 
+
+import PersonRoundedIcon from '@material-ui/icons/PersonRounded'
+import MailRoundedIcon from '@material-ui/icons/MailRounded'
+import DescriptionIcon from '@material-ui/icons/Description'
+
 class CommentForm extends React.Component
 {
     constructor(props) {
@@ -62,6 +67,8 @@ class CommentForm extends React.Component
               <form onSubmit={this.handleSubmit}>
                 <div className="row">
                     <div className="col-md-6">
+                      <div className="contact-form">
+                        <PersonRoundedIcon className="contact-form-icon" />
                         <input 
                             onChange={this.handleInputChange} 
                             type="text" 
@@ -71,7 +78,8 @@ class CommentForm extends React.Component
                             placeholder={currentLanguage.enterName}
                             value={this.state.namae} 
                             required/>
-                            
+
+                        <MailRoundedIcon className="contact-form-icon" />    
                         <input 
                             onChange={this.handleInputChange} 
                             type="email" 
@@ -81,11 +89,12 @@ class CommentForm extends React.Component
                             placeholder={currentLanguage.enterEmail}
                             value={this.state.emailId}
                             required/>
-
+                      </div>
                     </div>
                     
                     <div className="col-md-6">
-                        
+                      <div className="contact-form"> 
+                        <DescriptionIcon className="contact-form-icon" /> 
                         <textarea 
                             onChange={this.handleInputChange} 
                             type="text" 
@@ -97,7 +106,7 @@ class CommentForm extends React.Component
                             style={{width: '100%', height: '75px'}}
                             value={this.state.body} 
                             required/>
-
+                      </div>
                     </div>
 
                     {commentEnter}

@@ -6,11 +6,17 @@ class Timer extends React.Component
 	{
 		super(props)
 		this.state = {date: new Date()}
+		this.interval = 0
 	}
 
 	componentDidMount()
 	{
-		setInterval(() => this.clock(), 1000);
+		this.interval = setInterval(()=> this.clock(), 1000);
+	}
+
+	componentWillUnmount()
+	{
+		clearInterval(this.interval)
 	}
 
 	clock()

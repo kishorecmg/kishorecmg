@@ -61,7 +61,7 @@ export default class CommentMan extends React.Component
 
 
     return (
-      <div className="container entire-commentsection">
+      <div className="container-fluid entire-commentsection">
           
           <div className="block-heading about-home-heading text-center">
             <h2>{currentLang.commentsHead}</h2>

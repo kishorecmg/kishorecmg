@@ -12,7 +12,7 @@ class CounterBanner extends React.Component
     render()
     {
         let startDate = new Date("2020/5/2")
-        let today = new Date()
+        let today = new Date("2020/5/28")
 
         // difference is obtained in milliseconds, so dividing by 86400000 to get value in days
 

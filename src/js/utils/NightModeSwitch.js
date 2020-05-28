@@ -9,16 +9,18 @@ class NightModeSwitch extends React.Component
         if(qing) // Night-mode on
         {
             document.documentElement.style.setProperty("--main-navbar", "#333");
-            document.documentElement.style.setProperty("--main-background-color", "#555");
-            document.documentElement.style.setProperty("--main-background-light-grey", "#5f5f5f");
+            document.documentElement.style.setProperty("--main-background-color", "rgba(85, 85, 85, 0.90)");
+            document.documentElement.style.setProperty("--main-background-light-grey", "rgba(95, 95, 95, 0.50)");
             document.documentElement.style.setProperty("--main-text-color", "white");
+            document.documentElement.style.setProperty("--main-background-non-transparent", "rgb(85, 85, 85)");
         }
         else // Night-mode off
         {
             document.documentElement.style.setProperty("--main-navbar", "#0091ea");
-            document.documentElement.style.setProperty("--main-background-color", "#fff");
-            document.documentElement.style.setProperty("--main-background-light-grey", "#fafafa");
-            document.documentElement.style.setProperty("--main-text-color", "black");        
+            document.documentElement.style.setProperty("--main-background-color", "rgba(255, 255, 255, 0.90)");
+            document.documentElement.style.setProperty("--main-background-light-grey", "rgba(250, 250, 250, 0.50)");
+            document.documentElement.style.setProperty("--main-text-color", "black");
+            document.documentElement.style.setProperty("--main-background-non-transparent", "rgb(250, 250, 250)");        
         }
 
     }

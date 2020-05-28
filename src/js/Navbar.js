@@ -10,8 +10,7 @@ import NightModeSwitch from './utils/NightModeSwitch'
 
 class Navbar extends React.Component
 {
-    /* replace emojis with images as soon as possible
-       uses bootstrap for clean navigation bar
+    /* uses bootstrap for clean navigation bar
        template took from bootstrap website */
     
     render()
@@ -43,6 +42,7 @@ class Navbar extends React.Component
                     data-toggle="dropdown" aria-haspopup="true" 
                     aria-expanded="false"> <LanguageRoundedIcon /> {currentLang.language} </a>
                 <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <div className="dropdown-item navigation-language-selection" onClick={()=>this.props.data.languageSwitch('ta')} > <span className="flag-icon flag-icon-in"></span> {currentLang.tamil}</div>
                     <div className="dropdown-item navigation-language-selection" onClick={()=>this.props.data.languageSwitch('en')} > <span className="flag-icon flag-icon-gb"></span> {currentLang.english}</div>
                     <div className="dropdown-item navigation-language-selection" onClick={()=>this.props.data.languageSwitch('jp')} > <span className="flag-icon flag-icon-jp"></span> {currentLang.japanese}</div>
                 </div>   {/*dropdown menu div ends*/}

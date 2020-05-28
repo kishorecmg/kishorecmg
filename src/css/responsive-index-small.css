@@ -1,122 +1,6 @@
-/* Large devices like desktop and laptop */
-
-@media (min-width: 768px)
-{
-  /* Navbar starts */
-
-  .navbar-nav > li > a {
-    /* (80px - line-height of 27px) / 2 = 26.5px  */
-    padding-top: 26.5px;
-    padding-bottom: 26.5px;
-    line-height: 27px;
-  }
-
-  /* Navbar ends */
-  
-}
-
-/* Medium devices like tablets */
-
-@media (min-width: 768px) and (max-width: 991px) 
-{
-    /* Navbar start */
-
-    .navbar-nav > li > a 
-    {
-        /* (80px - line-height of 27px) / 2 = 26.5px  */
-        padding-top: 26.5px;
-        padding-bottom: 26.5px;
-        line-height: 27px;
-    }
-    
-    /* Navbar ends */
-
-    /* Banner~home starts */
-
-    #Banner 
-    {
-        height: 75vh;
-    }
-
-    #Banner .content-wrap h1 {
-      font-size: 40px;
-    }
-    #Banner .content-wrap h3 {
-      font-size: 24px;
-    }
-
-    /* Banner~home ends */
-
-    /* abouthome starts */
-    
-    #Services
-    {
-      width: 75vw;
-      margin: 0px auto;
-    }
-
-    /* abouthome ends */
-
-    /* Footer starts */
-
-    footer.footer .social-link {
-      height: 45px;
-      width: 45px;
-      font-size: 18px;
-    }
-
-    /* Footer ends */
-
-    /* Errorpage starts */
-    
-    .errorpage-text
-    {
-      font-size: 20vw;
-    }
-
-    /* Errorpage ends */
-
-    /* counter starts */
-    
-    .mu-counter-name
-    {
-      font-weight: 300;
-      font-size: 18px;
-    }
-
-    .counter-value 
-    {
-      font-size: 30px;
-    }
-
-    /* Counter ends */
-
-    /* Comment section starts */
-
-    .comment-picture
-    {
-      width: 100%;
-    }
-
-    .comment-body
-    {
-      text-align: left;
-      font-size: small;
-      margin: 15px auto;
-    }
-
-    /* Comment section ends */
-
-    /* Contact page starts */
-
-   
-
-    /* Contact page ends */
-}
-
 /* Small devices like phones */
 
-@media (max-width: 768px) 
+@media screen and (max-width: 768px) 
 {
     /* Navbar starts */
 
@@ -239,4 +123,18 @@
     }
 
     /* contact page ends */
+
+    /* About mainpage starts */
+
+    .about-heading
+    {
+      font-size: 40px;
+    }
+    
+    .about-para
+    {
+      font-size: 30px;      
+    }
+
+    /* About mainpage ends */
 }

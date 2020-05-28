@@ -2,14 +2,18 @@
 {
   --main-navbar : #0091ea;
   --main-navbar-text : #fff;
-  --main-background-color : #fff;
-  --main-background-light-grey : #fafafa;
-  --main-text-color : black;
+  --main-background-color : rgba(255, 255, 255, 0.95);
+  --main-background-light-grey : rgba(250, 250, 250, 0.3);
+  --main-background-non-transparent : rgb(250, 250, 250);
+  --main-text-color : #000000;
 }
 
-#page-container {
+#page-container 
+{
   position: relative;
   min-height: 75vh;
+  background-image: linear-gradient(var(--main-background-color), var(--main-background-color)), url("../img/about/webback.png");
+  background-repeat: repeat;
 }
 
 body 
@@ -43,7 +47,6 @@ code
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-
 }
 
 .errorpage-text
@@ -202,6 +205,12 @@ input:checked + .slider:before {
 
 /* Nightmode switch ends */
 
+/* Overall home start */
+
+/* tumbleweed */
+
+/* Overall home ends */
+
 /* Banner ~ home starts */
 #Banner {
   position: relative;
@@ -253,13 +262,12 @@ input:checked + .slider:before {
 section.tech-used
 {
    margin: 0px auto 20px;
-   background-color: var(--main-background-light-grey);
 }
 
 .tech-used-container
 {
   margin: 0px 5%;
-  padding-bottom: 10px ;
+  padding-bottom: 10px;
 }
 
 .tech-used-head
@@ -273,7 +281,7 @@ section.tech-used
 .card
 {
   color: var(--main-text-color);
-  background-color: var(--main-background-color);
+  background-color: var(--main-background-light-grey);
   text-align: center;
   margin-bottom: 30px !important;
 }
@@ -289,7 +297,7 @@ section.tech-used
 
 #Services 
 {
-  background-color: var(--main-background-color);
+  margin: auto;
 }
 
 .about-home-heading
@@ -418,7 +426,6 @@ section.tech-used
 	right: 0;
 	position: absolute;
 	opacity: 0.65;
-	background-color: var(--main-background-color);
 }
 
 .mu-counter-area {
@@ -498,7 +505,9 @@ section.tech-used
 
 .entire-commentsection
 {
-  margin: 10% auto;
+  margin: 50px auto 0px;
+  padding: 0px 10vw 40px;
+  /* width: 75%; */
 }
 
 .comment-cantfetch
@@ -521,7 +530,6 @@ section.tech-used
 {
   border-radius:1rem;
   margin: 10px auto;
-  background-color: var(--main-background-light-grey);
   color: var(--main-text-color);
 }
 
@@ -530,6 +538,12 @@ section.tech-used
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #a5a5a5;
   opacity: 1; /* Firefox */
+}
+
+#body-textbox
+{
+  min-height: 75px;
+  max-height: 200px;
 }
 
 .comment-button 
@@ -580,8 +594,7 @@ section.tech-used
 
 footer.footer 
 {
-  padding-top: 35px;
-  padding-bottom: 35px;
+  padding: 35px 0;
   background-color: var(--main-navbar);
   
 }
@@ -614,12 +627,12 @@ footer.footer .social-link:hover
 #contact-mainone 
 {
   position: relative;
-  height: 100vh;
+  height: 100%;
   background-position: center center;
   background-image: url("../img/contact/contactbackground.jpg");
   color: #fff;
-  margin-top: -15px;
-  padding-top: 20px;
+  margin: -15px auto -15px;
+  padding: 20px 5px;
   background-size: cover;
 }
 
@@ -645,7 +658,7 @@ footer.footer .social-link:hover
 {
   border-radius:1rem;
   margin: 10px auto;
-  background-color: var(--main-background-light-grey);
+  background-color: var(--main-background-non-transparent);
   color: var(--main-text-color);
   text-indent: 30px;
 }
@@ -702,3 +715,212 @@ footer.footer .social-link:hover
 
 
 /* Contact page ends */
+
+/* About mainpage starts */
+
+#about-mainone 
+{
+  position: relative;
+  /* height: 100vh; */
+  background-position: center center;
+  background-image: url("../img/about/pathsfork.jpg");
+  color: #fff;
+  margin: -15px 0;
+  padding: 20px 10px;
+  background-size: cover;
+}
+
+.about-heading
+{
+  text-align: center;
+  font-size: 60px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  /* Adds a border to text */
+}
+
+.about-para
+{
+  text-align: center;
+  font-size: 40px;
+  background-color: rgba(00, 145, 234, 0.25);
+  border-radius: 2rem;
+  margin: auto;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  /* Adds a border to text */
+  padding: 15px;
+  width: fit-content; 
+}
+
+.about-div
+{
+  margin: 40px auto 5px;
+}
+
+.about-link, .about-link:hover
+{
+  text-decoration: none !important;   /* important is important here */
+  color: white;
+}
+
+.about-inside-head
+{
+  background-color: rgba(00, 145, 234, 0.25);
+  text-align: center;
+  border-radius: 2rem;
+  font-size: 2rem;
+  padding: 20px 0;
+  margin: 15vh auto;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.about-side-div
+{
+  height: 50vh;
+  border-radius: 2rem;
+  transition: 1s;
+  /* height: calc(var(--view-height, 1vh) * 0.6); */
+}
+
+.about-side-div:hover
+{
+  background-color: rgba(255, 255, 255, 0.4);
+}
+/* About mainpage ends */
+
+/* About sub pages starts */
+
+#myself-parent
+{
+  position: relative;
+  height: 100%;
+}
+
+.myself-middle
+{
+  height: 100%;
+  padding: 0px 0px 40px;
+  margin: 0 5vw;
+}
+
+.myself-mainhead
+{
+  font-size: 50px;
+  text-align: center;
+  margin: 35px auto 20px;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.myself-mainpara
+{
+  font-size: 25px;
+  text-align: center;
+  margin: 15px 1vw 20px;
+}
+
+.myself-menustyle
+{
+  margin: 20px auto;
+  width: max-content;
+}
+
+.myself-menu
+{
+  width: 75vw;
+  list-style: none;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.myself-div
+{
+  border-top: 1px solid var(--main-navbar);
+  overflow: hidden;
+}
+
+.myself-btn
+{
+  display: block;
+  padding: 16px 20px;
+  background: var(--main-navbar);
+  color: white;
+  text-decoration: none !important;
+}
+
+.myself-btn:hover
+{
+  color:wheat;
+}
+
+.myself-smenu
+{
+  background: var(--main-background-light-grey);
+  overflow: hidden;
+  border-radius: 10px;
+  transition: max-height 0.15s ease-out;
+  max-height: 0;
+}
+.myself-smenu-child
+{
+  display: block;
+  padding: 16px 26px;
+  color: var(--main-text-color);
+  font-size: 14px;
+  margin: 4px 0;
+  position: relative;
+}
+.myself-smenu-child:before
+{
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background: var(--main-navbar);
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+.myself-smenu-.myself-smenu-child:before
+{
+  opacity: 1;
+}
+.myself-div:target .myself-smenu
+{
+  transition: max-height 0.25s ease-in;
+  max-height: 200vh;
+}
+
+.myself-list
+{
+  padding: 0px;
+  list-style-type: none;    /* removes indentation by li tag */
+}
+
+.myself-list > li
+{
+  list-style: none;
+  width: 100%;
+  margin: 4px auto;
+  padding: 5px 2vw;
+  border-radius: 10px;
+}
+
+.myself-list > li:hover
+{
+  background-color: var(--main-background-light-grey);
+}
+
+.myself-return > .col-6
+{
+  text-align: center;
+  width: 100%;
+  margin: 30px auto;
+}
+
+.myself-image
+{
+  width: 100%;
+  max-width: 300px;
+  margin: 10px auto;
+  display: block;
+}
+
+
+/* About sub pages ends */

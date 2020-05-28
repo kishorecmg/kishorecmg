@@ -30,7 +30,7 @@ class AboutHome extends React.Component
                     <div className="service-content">
                       <h3>{currentLang.aboutMe}</h3>
                       <p>{currentLang.aboutMeDescriptionUnder}</p>
-                      <NavLink className="btn btn-primary about-home-link" role="button" to="/about">{currentLang.knowMore}</NavLink>
+                      <NavLink className="btn btn-primary about-home-link" role="button" to="/about/myself">{currentLang.knowMore}</NavLink>
                     </div>
                   </div>
                 </div>
@@ -46,7 +46,7 @@ class AboutHome extends React.Component
                     <div className="service-content">
                       <h3>{currentLang.aboutWebsite}</h3>
                       <p>{currentLang.aboutWebsiteDescriptionUnder}</p>
-                      <NavLink className="btn btn-primary about-home-link" role="button" to="/about">{currentLang.knowMore}</NavLink>
+                      <NavLink className="btn btn-primary about-home-link" role="button" to="/about/webpage">{currentLang.knowMore}</NavLink>
                     </div>
                   </div>
                 </div>

@@ -11,11 +11,11 @@ class Comment extends React.Component
         
         return(
             <div class="card flex-row flex-wrap">
-                <div class="card-header col-md-2">
+                <div class="card-header col-2">
                     <img src={avatar} alt="generic-profile" className="comment-picture" />
                 </div>
 
-                <div class="card-block col-md-10 comment-body">
+                <div class="card-block col-10 comment-body">
                     <h4 class="card-title">{comment.name}</h4>
                     <p class="card-text">{comment.body}</p>
                 </div>
